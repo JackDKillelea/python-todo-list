@@ -10,9 +10,9 @@ def add_todo():
     functions.write_to_file(list_of_todos)
     st.session_state["todo_key"] = ""
 
-st.title("My Todo App")
-st.subheader("This is my todo app")
-st.write("This is created to increase your productivity with a minimalist approach")
+st.title("Minimalist Global Todo List")
+st.subheader("This is a todo list that is shared globally.")
+st.write("Please feel free to test the todo list app by adding and completing todos")
 
 for index, todo in enumerate(list_of_todos):
     checkbox = st.checkbox(todo, key=todo)
